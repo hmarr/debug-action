@@ -9,6 +9,7 @@ debugging GitHub Actions.
 
 ```
 -- Environment variables ----------------------------------------------
+SECRET_TOKEN=[FILTERED]
 HOSTNAME=cdca0460a2e8
 SHLVL=1
 HOME=/github/home
