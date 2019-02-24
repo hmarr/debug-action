@@ -5,6 +5,8 @@
 Print the environment variables and the event payload. Useful for developing or
 debugging GitHub Actions.
 
+Secrets are automatically filtered in the Actions logs.
+
 ## Example output (in the Actions logs)
 
 ```
