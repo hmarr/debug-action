@@ -4216,7 +4216,13 @@ for (const prop in _actions_github__WEBPACK_IMPORTED_MODULE_0__.context) {
 }
 Object.defineProperty(_actions_github__WEBPACK_IMPORTED_MODULE_0__.context.payload, 'payload', {enumerable: true});
 for (const prop in _actions_github__WEBPACK_IMPORTED_MODULE_0__.context.payload) {
-    console.log(`${prop}: ${_actions_github__WEBPACK_IMPORTED_MODULE_0__.context.payload[prop]}`)
+    console.log(`payload.${prop}: ${_actions_github__WEBPACK_IMPORTED_MODULE_0__.context.payload[prop]}`)
+}
+if (_actions_github__WEBPACK_IMPORTED_MODULE_0__.context.eventName === 'pull_request') {
+    Object.defineProperty(_actions_github__WEBPACK_IMPORTED_MODULE_0__.context.payload.pull_request, 'payload', {enumerable: true});
+    for (const prop in _actions_github__WEBPACK_IMPORTED_MODULE_0__.context.payload.pull_request) {
+        console.log(`pullrequest.${prop}: ${_actions_github__WEBPACK_IMPORTED_MODULE_0__.context.payload.pull_request[prop]}`)
+    }
 }
 
 console.log('\n-------- Process.ENV properties --------')

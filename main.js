@@ -8,7 +8,13 @@ for (const prop in github.context) {
 }
 Object.defineProperty(github.context.payload, 'payload', {enumerable: true});
 for (const prop in github.context.payload) {
-    console.log(`${prop}: ${github.context.payload[prop]}`)
+    console.log(`payload.${prop}: ${github.context.payload[prop]}`)
+}
+if (github.context.eventName === 'pull_request') {
+    Object.defineProperty(github.context.payload.pull_request, 'payload', {enumerable: true});
+    for (const prop in github.context.payload.pull_request) {
+        console.log(`pullrequest.${prop}: ${github.context.payload.pull_request[prop]}`)
+    }
 }
 
 console.log('\n-------- Process.ENV properties --------')
