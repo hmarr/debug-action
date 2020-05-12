@@ -4,4 +4,4 @@ author: jepetty
 
 runs:
   using: node12
-  main: main.js
+  main: action.js

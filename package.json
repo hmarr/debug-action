@@ -2,9 +2,9 @@
   "name": "debug-action-windows",
   "version": "1.0.0",
   "description": "Outputs action variables in Windows",
-  "main": "main.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node_modules/.bin/ncc build main.js"
   },
   "repository": {
     "type": "git",
@@ -16,8 +16,11 @@
     "url": "https://github.com/jepetty/debug-action/issues"
   },
   "homepage": "https://github.com/jepetty/debug-action#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@actions/github": "^2.2.0"
+  },
   "devDependencies": {
+    "@zeit/ncc": "^0.22.1",
     "typescript": "^3.9.2"
   },
   "engines": {
