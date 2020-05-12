@@ -2,7 +2,7 @@
   "name": "debug-action-windows",
   "version": "1.0.0",
   "description": "Outputs action variables in Windows",
-  "main": "dist/index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,12 +16,11 @@
     "url": "https://github.com/jepetty/debug-action/issues"
   },
   "homepage": "https://github.com/jepetty/debug-action#readme",
-  "dependencies": {
-    "@actions/github": "1.0.0",
-    "@octokit/rest": "^17.9.0",
-    "@octokit/webhooks": "^7.5.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "typescript": "^3.9.2"
+  },
+  "engines": {
+    "node": ">= 10.0.0"
   }
 }
