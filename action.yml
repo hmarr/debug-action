@@ -1,0 +1,7 @@
+name: Windows Debug Action
+description: Prints action variables for Windows builds
+author: jepetty
+
+runs:
+  using: node12
+  main: main.js
