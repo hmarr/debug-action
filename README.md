@@ -11,7 +11,7 @@ Secrets are automatically filtered in the Actions logs.
 
 ## Usage instructions
 
-Add a step with `- uses: hmarr/debug-action@v2.0.0` to a workflow file. Here's an example of a complete workflow file:
+Add a step with `- uses: hmarr/debug-action@v2` to a workflow file. Here's an example of a complete workflow file:
 
 ```yaml
 name: Debug
@@ -21,7 +21,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: hmarr/debug-action@v2.0.0
+    - uses: hmarr/debug-action@v2
 ```
 
 
