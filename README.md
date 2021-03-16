@@ -38,3 +38,9 @@ GITHUB_EVENT_NAME=pull_request
 }
 -----------------------------------------------------------------------
 ```
+
+## Development and release process
+
+Each major version corresponds to a branch (e.g. `v1`, `v2`). The latest major
+version (`v2` at the time of writing) is the repository's default branch.
+Releases are tagged with semver-style version numbers (e.g. `v1.2.3`).
