@@ -7,7 +7,7 @@ debugging GitHub Actions.
 
 Secrets are automatically filtered in the Actions logs.
 
-**Important:** use v2.0.0 or later, as v1 was designed for the initial GitHub Actions beta, and may no longer work as expected.
+**Important:** use v3.0.0 or later, as v1 was designed for the initial GitHub Actions beta and no longer works as expected, and v2 uses node16, which has now been deprecated.
 
 ## Usage instructions
 
