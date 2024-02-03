@@ -11,7 +11,7 @@ Secrets are automatically filtered in the Actions logs.
 
 ## Usage instructions
 
-Add a step with `- uses: hmarr/debug-action@v2` to a workflow file. Here's an example of a complete workflow file:
+Add a step with `- uses: hmarr/debug-action@v3` to a workflow file. Here's an example of a complete workflow file:
 
 ```yaml
 name: Debug
@@ -21,7 +21,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: hmarr/debug-action@v2
+    - uses: hmarr/debug-action@v3
 ```
 
 
@@ -78,5 +78,5 @@ That example is truncated a bit, but you get the idea.
 ## Development and release process
 
 Each major version corresponds to a branch (e.g. `v1`, `v2`). The latest major
-version (`v2` at the time of writing) is the repository's default branch.
+version (`v3` at the time of writing) is the repository's default branch.
 Releases are tagged with semver-style version numbers (e.g. `v1.2.3`).
